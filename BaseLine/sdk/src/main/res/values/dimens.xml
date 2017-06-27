@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--手机二维码和扫描-->
+    <dimen name="vf_sdk_margin_dp5">5dip</dimen>
+    <dimen name="vf_sdk_margin_dp8">8dip</dimen>
+    <dimen name="vf_sdk_margin_dp10">10dip</dimen>
+    <dimen name="vf_sdk_margin_dp12">12dip</dimen>
+    <dimen name="vf_sdk_margin_dp15">15dip</dimen>
+    <dimen name="vf_sdk_margin_dp20">20dip</dimen>
+    <dimen name="vf_sdk_margin_dp30">30dip</dimen>
+    <dimen name="vf_sdk_margin_dp45">45dip</dimen>
+    <dimen name="vf_sdk_margin_dp50">50dip</dimen>
+
+    <dimen name="vf_sdk_txt_size16">16dip</dimen>
+    <dimen name="vf_sdk_txt_size18">18dip</dimen>
+    <dimen name="vf_sdk_txt_size20">20dip</dimen>
+    <dimen name="vf_sdk_txt_size24">24dip</dimen>
+
+    <!--日历控件-->
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/vf_sdk_activity_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"     
+             
+        android:background="@color/vf_sdk_white" 
+        android:orientation="vertical"
+        android:id="@+id/layout_amount">
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" 
+            android:text="收款金额:"
+            android:textColor="@color/vf_sdk_black"
+            android:textSize="@dimen/vf_sdk_txt_size18" />
+        <TextView
+            android:id="@+id/tv_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" 
+            android:text="收款对象:"
+            android:textColor="@color/vf_sdk_black"
+            android:textSize="@dimen/vf_sdk_txt_size18" />
+
+        <TextView
+            android:id="@+id/tv_wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" 
+            android:text="等待对方付款中，等稍后"
+            android:textColor="@color/vf_sdk_black"
+            android:textSize="@dimen/vf_sdk_txt_size18" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.vfinworks.vfsdk"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 二维码 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 增加震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <application>
+        <activity
+            android:name=".activity.core.InitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.core.SetSecurityActivity"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_set_security"></activity>
+        <activity
+            android:name=".activity.core.BillActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.core.BillDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.core.VFWebViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.PeopleInfo.CreateGesturePwdActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.PeopleInfo.UnlockGesturePwdActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.UserInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.MyQrCodeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.NicknameActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.ChangePhoneActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.ChangePhoneSmsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.AutonymActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.CertificationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.PasswordSettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.ResetPayPwdActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.SafeCheckActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.PayIDVerifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.PayNumberVerifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.ResetLoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.ResetLoginPasswordCodeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.ResetLoginPasswordNumberActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.SetLoginPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.ForgetLoginPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.ResetSuccessActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.SecuritySettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.GestureSettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.UnlockGesturePwdToHomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.AboutActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.DescriptionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.ProtocolActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.VersionIntroActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.AdviseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.PeopleInfo.PhoneActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.core.PlaceOrderPayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".entertransition.EnterTransitionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".entertransition.EnterTransitionActivityLollipop"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name="com.vfinworks.vfsdk.activity.login.LoadingActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.vfinworks.vfsdk.activity.login.LoginActivity" android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.vfinworks.vfsdk.activity.login.RegActivity" android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+        <activity android:name="com.vfinworks.vfsdk.activity.login.RegVerifyActivity" android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+        <activity android:name="com.vfinworks.vfsdk.activity.login.RegInfoDetailActivity" android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+        <activity android:name="com.vfinworks.vfsdk.activity.login.FillInfoActivity" android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+        <!-- 充值 -->
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.RechargeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.MyBankCardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.LimitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.MyBankCardDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.AddWithdrawCardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.SelectProvinceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.SelectCityActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.SelectBankActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.SelectBranchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.WithdrawActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.WithdrawSelectBankActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.TradeResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.PaymentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.TransferMethodSelectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.TransferAccountInputAccountActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.TransferAccountInputInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.TransferAccountConfirmActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.TransferToCardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.TransferToCardInputInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.WalletActivity"
+            android:screenOrientation="portrait" android:launchMode="singleTask"/>
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.MyInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.AddQpayInputAccoutActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.base.AddQpayInputInfoBaseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.PlaceOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.SelectQpayBankActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.core.PaySmsVerificationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--zxing包二维码-->
+        <activity
+            android:name="com.vfinworks.vfsdk.zxing.activity.ActivityPaymentQRCodeGenerate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.zxing.activity.ActivityGatheringSetAmount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.zxing.activity.ActivityGatheringScan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.zxing.activity.ActivityGatheringQRCode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.zxing.activity.ActivityGatheringScanSetAmount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.zxing.activity.MipcaActivityCapture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vfinworks.vfsdk.zxing.activity.ActivityGatheringScanWait"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.vfinworks.vfsdk.activity.assistant.SetPaymentPwdActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="向商家付款"
+            android:textColor="@color/vf_sdk_black"
+            android:textSize="@dimen/vf_sdk_txt_size18"/>
+
+        <LinearLayout
+            android:id="@+id/layout_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/color_white"
+            android:orientation="vertical" android:layout_below="@+id/tv_top"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+
+            <FrameLayout
+                android:id="@+id/layout_frame_code39"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="100dp">
+                <ImageView
+                    android:id="@+id/im_code39"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"/>
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/tv_code39"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/vf_sdk_txt_size18"
+                android:singleLine="true"
+                />
+
+            <FrameLayout
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/layout_frame_qrcode"
+                android:layout_width="240dp"
+                android:layout_height="240dp">
+
+                <ImageView
+                    android:id="@+id/im_qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dip"
+                android:singleLine="true"
+                android:text="每分钟自动更新"
+                android:textColor="@color/vf_sdk_gray"
+                android:textSize="@dimen/vf_sdk_txt_size18"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

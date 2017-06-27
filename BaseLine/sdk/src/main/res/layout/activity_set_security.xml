@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg" >
+
+    <RelativeLayout
+        android:id="@+id/ly_close_gesture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/vf_rectangle_selector" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/tv_accountdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginBottom="10dip"
+
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_normal_color"
+            android:text="手势密码"
+            android:textSize="18sp"/>
+
+        <com.vfinworks.vfsdk.view.SlipButton
+            android:id="@+id/split_button"
+            android:layout_width="90dip"
+            android:layout_height="55dip"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+
+        <View
+            android:layout_below="@id/tv_accountdetail"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dip"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_modify_gesture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip"
+        android:visibility="visible"
+        android:background="@drawable/vf_rectangle_selector"  >
+        <TextView
+            android:id="@+id/tv_modify_gesture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginBottom="10dip"
+
+            android:textColor="@color/text_normal_color"
+            android:text="修改手势密码"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/vf_right_arrow" />
+
+
+        <View
+            android:layout_below="@id/tv_modify_gesture"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_modify_login_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/vf_rectangle_selector" >
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/tv_modify_login_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginBottom="10dip"
+
+            android:textColor="@color/text_normal_color"
+            android:layout_centerVertical="true"
+            android:text="修改登录密码"
+            android:textSize="18sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/vf_right_arrow" />
+
+        <View
+            android:layout_below="@id/tv_modify_login_password"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_modify_pay_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/vf_rectangle_selector" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+
+
+        <TextView
+            android:id="@+id/tv_modify_pay_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginBottom="10dip"
+
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_normal_color"
+            android:text="修改支付密码"
+            android:textSize="18sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/vf_right_arrow" />
+
+
+        <View
+            android:layout_below="@id/tv_modify_pay_password"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dip"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_get_back_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip"
+        android:visibility="visible"
+        android:background="@drawable/vf_rectangle_selector"  >
+        <TextView
+            android:id="@+id/tv_get_back_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginBottom="10dip"
+
+
+
+            android:textColor="@color/text_normal_color"
+            android:text="找回支付密码"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/vf_right_arrow" />
+
+
+        <View
+            android:layout_below="@id/tv_get_back_password"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

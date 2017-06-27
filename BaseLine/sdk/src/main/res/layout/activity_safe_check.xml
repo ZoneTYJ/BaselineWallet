@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/activity_bg"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_3"
+        android:textSize="14dp"
+        android:text="请选择以下任一种方式进行校验"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_base"/>
+    <RelativeLayout
+        android:id="@+id/rl_identity"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@android:color/white"
+        android:paddingLeft="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="验证身份证件"
+            android:textColor="@color/text_3"
+            android:textSize="16dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/vf_next_icon"
+            android:layout_marginRight="18dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_9"
+            android:textSize="16dp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_base"/>
+
+
+
+</LinearLayout>

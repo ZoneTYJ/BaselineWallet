@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:background="@color/activity_bg"
+    android:orientation="vertical" >
+    
+    <View
+        android:id="@+id/gesturepwd_creat_gap1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" />
+
+    <com.vfinworks.vfsdk.view.LockPatternIndicatorView
+        android:id="@+id/lpi_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/gesturepwd_create_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"  
+        android:text="绘制解锁图案"
+        android:textColor="@color/text_9"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/gesturepwd_creat_gap2"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+
+    <com.vfinworks.vfsdk.view.LockPatternView
+        android:id="@+id/gesturepwd_create_lockview"
+        android:layout_width="match_parent"
+        android:layout_height="320.0dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:id="@+id/gesturepwd_creat_gap3"
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip" />
+    
+
+</LinearLayout>

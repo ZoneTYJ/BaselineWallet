@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f8f8">
+
+    <TextView
+        android:id="@+id/tv_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4285f4"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+
+    <RelativeLayout
+        android:id="@+id/tv_usernameframe"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/tv_login_title"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_base" />
+        <TextView
+            android:id="@+id/tv_usernamelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="账号"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_normal_color"
+            android:textSize="16dp"
+
+            />
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_usernamelabel"
+            android:background="@null"
+            android:hint="请输入邮箱"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:text="ceshi@po.com"
+            android:textColor="@color/text_normal_color"
+            android:textColorHint="#cccccc"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_passwordframe"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/tv_usernameframe"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1px"
+            android:background="@color/line_base" />
+        <TextView
+            android:id="@+id/tv_pwdlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="密码"
+            android:textColor="@color/text_normal_color"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_pwdlabel"
+            android:background="@null"
+            android:hint="请输入登录密码"
+            android:inputType="textWebPassword"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_normal_color"
+            android:textColorHint="#cccccc"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/rl_code"
+        android:background="@color/line_base" />
+
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_passwordframe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/vf_btn_normal_bg_selector"
+        android:onClick="login_Click"
+        android:text="登  录"
+        android:textColor="@drawable/vf_btn_normal_text_selector"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg" >
+    
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:textColor="@color/color_blue" 
+        android:textSize="20sp"
+        android:text="提现成功！" />
+    
+    <Button
+        android:id="@+id/btn_confirm" 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/vf_btn_normal_bg_selector"
+        android:text="确认"
+        android:textColor="@drawable/vf_btn_normal_text_selector"
+        android:textSize="18sp" />
+
+</LinearLayout>

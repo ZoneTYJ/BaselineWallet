@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_load_more"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="66dp"
+    android:layout_height="66dp">
+
+    <TextView
+        android:id="@+id/tvs_load_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="查看更多的支付方式"
+        android:textColor="@color/color_black"
+        android:textSize="14dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@+id/tvs_load_more"
+        android:layout_centerVertical="true"
+        android:background="@drawable/vf_down_icon"/>
+</RelativeLayout>

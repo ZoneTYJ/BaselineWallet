@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f7f8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f8f8">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_cancel"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="center"
+                android:background="@drawable/vf_back_selector_black"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/my_alert_dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/pay_pwd_dialog_title"
+                android:textColor="@color/pay_pwd_title_text_color"
+                android:textSize="16dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/my_alert_dialog_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:text="0.01元"
+                android:textColor="#d6874e"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_dialog_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:text=""
+                android:textColor="#cbcdce"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <com.vfinworks.vfsdk.view.paypwd.VFPasswordView
+            android:background="@color/color_white"
+            android:id="@+id/pay_password_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/forget_psw"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                android:textColor="#4285F4"
+                android:text="忘记密码"/>
+        </RelativeLayout>
+
+
+        <com.vfinworks.vfsdk.view.paypwd.VFKeyBoardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/pay_view_bg"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

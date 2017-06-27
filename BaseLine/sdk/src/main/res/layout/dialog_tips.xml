@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="321dp"
+    android:layout_height="169dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/vf_dialog_bg_shape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_black_color"
+            android:text="二维码错误"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="请扫描该软件的二维码"
+        android:textColor="#777777"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_margin="2dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/btn_cancel"
+            android:background="#F4F4F4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:text="知道了"
+            android:textColor="@color/text_normal_color"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</LinearLayout>

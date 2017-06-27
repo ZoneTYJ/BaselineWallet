@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/activity_bg"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_base"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:paddingLeft="18dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="昵称"
+            android:textColor="@color/text_3"
+            android:textSize="16dp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/et_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入1-20个字的昵称"
+            android:lines="1"
+            android:maxLength="20"
+            android:text=""
+            android:textColor="@color/text_normal_color"
+            android:textColorHint="#cccccc"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_base"/>
+</LinearLayout>

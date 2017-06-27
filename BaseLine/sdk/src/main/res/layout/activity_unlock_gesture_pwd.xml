@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gesturepwd_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/activity_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/gesturepwd_unlock_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_9"
+		android:text="请验证手势密码"
+        android:layout_marginTop="35dp"
+        android:textSize="18dp" />
+
+
+    <com.vfinworks.vfsdk.view.LockPatternView
+        android:id="@+id/gesturepwd_unlock_lockview"
+        android:layout_width="match_parent"
+        android:layout_height="320.0dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"/>
+	<TextView
+		android:id="@+id/gesturepwd_unlock_forget"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="忘记手势密码"
+		android:gravity="center_horizontal"
+		android:visibility="visible"
+		android:layout_alignParentLeft="true"
+		android:layout_marginBottom="18dp"
+		android:layout_marginTop="30dp"
+		android:textColor="#00bfff"
+		android:textSize="20dp" />
+
+
+
+</LinearLayout>

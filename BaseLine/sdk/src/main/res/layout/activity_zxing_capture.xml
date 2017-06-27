@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <com.vfinworks.vfsdk.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="fill_parent" >
+	    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:orientation="horizontal"
+	        android:gravity="center"
+	        android:layout_alignParentBottom="true"
+	        android:padding="50dip"
+	        android:background="#33000000">
+	        <Button android:id="@+id/btn_left"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.0"
+		        android:background="#42b3df"
+		        android:textSize="16sp"
+		        android:textColor="#ffffff"
+		        android:layout_marginRight="10dip"
+		        android:singleLine="true"
+		        android:visibility="gone"
+		        android:padding="5dip"
+		        android:text="取消"/>
+	        <Button android:id="@+id/btn_camright"
+	            android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.0"
+		        android:background="#42b3df"
+		        android:textSize="16sp"
+		        android:textColor="#ffffff"
+		        android:layout_marginLeft="10dip"
+		        android:singleLine="true"
+		        android:visibility="gone"
+		        android:padding="5dip"
+		        android:text="开启闪光灯"/>
+	    </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

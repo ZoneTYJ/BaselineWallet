@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/text_normal_color" 
+        android:textSize="14sp"
+        android:text="为了保障资金安全，请关联账户本人的银行卡" />
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dip"
+	    android:background="@drawable/vf_row_bg"
+	    android:orientation="horizontal" >"
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_gravity="center_vertical"
+	        android:textColor="@color/text_normal_color" 
+	        android:textSize="16sp"
+	        android:text="卡号" />
+	    <com.vfinworks.vfsdk.view.VFCardNumberEditText
+            android:id="@+id/et_account"
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:hint="请输入银行卡号"
+            android:textColorHint="@color/text_hint_color"
+            android:textColor="@color/text_normal_color"
+            android:background="@null"
+            android:maxLength="23"
+            android:inputType="number"
+            android:textSize="16sp" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_next" 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/vf_btn_normal_bg_selector"
+        android:enabled="false" 
+        android:text="下一步"
+        android:textColor="@drawable/vf_btn_normal_text_selector"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="只允许使用储蓄卡进行充值"
+        android:textColor="@color/text_gray_color"
+        />
+</LinearLayout>

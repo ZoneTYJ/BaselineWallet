@@ -1,0 +1,94 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_transfer_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vf_rectangle_selector"
+        android:clickable="true">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"/>
+
+        <TextView
+            android:id="@+id/tv_transfer_account"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/vf_qb_icon"
+            android:drawablePadding="18dp"
+            android:gravity="center_vertical"
+            android:text="转到他人钱包账户"
+            android:textColor="@color/text_normal_color"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/vf_right_arrow"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_transfer_account"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/line_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_transfer_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vf_rectangle_selector"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_transfer_card"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/vf_yinlian_icon"
+            android:drawablePadding="18dp"
+            android:gravity="center_vertical"
+            android:text="转到银行卡"
+            android:textColor="@color/text_normal_color"
+            android:textSize="14dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_transfer_card"
+            android:background="@color/line_color"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最近"
+        android:layout_marginLeft="18dp"
+        android:textColor="@color/text_color_black"
+        android:textSize="12dp"/>
+
+
+    <ListView
+        android:id="@+id/lv_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white">
+    </ListView>
+</LinearLayout>

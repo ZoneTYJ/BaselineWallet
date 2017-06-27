@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg" >
+    <RelativeLayout
+        android:id="@+id/ly_zhifubao"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dip"
+    	android:background="@drawable/vf_row_bg" >
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dip"
+		    android:layout_centerVertical="true"
+		    android:textColor="@color/text_normal_color"
+		    android:text="支付宝"
+		    android:textSize="18sp"/>
+		<ImageView 
+		    android:id="@+id/iv_select_zhifubao"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dip"
+		    android:layout_centerVertical="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/vf_select" />
+	</RelativeLayout>
+
+	<RelativeLayout
+    	android:id="@+id/ly_qpay_card"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dip"
+    	android:background="@drawable/vf_row_bg" >
+		<TextView 
+		    android:id="@+id/tv_qpay_bank"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dip"
+		    android:paddingTop="10dip"
+		    android:textColor="@color/text_normal_color"
+		    android:text="招商银行"
+		    android:textSize="18sp"/>
+		<TextView 
+		    android:id="@+id/tv_qpay_number"
+		    android:layout_below="@id/tv_qpay_bank"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dip"
+		    android:paddingBottom="10dip"
+		    android:textColor="@color/text_normal_color"
+		    android:text="3303289939393939"
+		    android:textSize="18sp"/>
+		<ImageView android:id="@+id/iv_select_qpay_bank"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dip"
+		    android:layout_centerVertical="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/vf_select" />
+	</RelativeLayout>
+	
+    <RelativeLayout
+    	android:id="@+id/ly_qpay_new_card"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/vf_row_bg" >
+		<TextView 
+		    android:id="@+id/tv_qpay_new_card"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dip"
+		    android:textColor="@color/text_normal_color"
+		    android:layout_centerVertical="true"
+		    android:text="使用其它卡充值"
+		    android:textSize="18sp"/>
+		<ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dip"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/vf_right_arrow" />
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/tv_rsm_ebank"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/vf_row_bg"
+		android:text="网银"
+		android:textSize="18sp"
+		android:gravity="center_vertical"
+		android:padding="10dp"/>
+</LinearLayout>

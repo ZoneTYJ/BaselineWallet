@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f6f7fb"
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="选择交易类型"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_base" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fbl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="15dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:justifyContent="space_around"
+        app:flexWrap="wrap">
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vf_filter_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@android:color/black"
+            app:layout_flexBasisPercent="26%"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cb_instant"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vf_filter_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="即时到账"
+            android:textColor="@android:color/black"
+            app:layout_flexBasisPercent="26%"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cb_danbao"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vf_filter_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="担保交易"
+            android:textColor="@android:color/black"
+            app:layout_flexBasisPercent="26%"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cb_tran_hu"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vf_filter_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="转账到户"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            app:layout_flexBasisPercent="26%"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cb_tran_ka"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vf_filter_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="转账到卡"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            app:layout_flexBasisPercent="26%"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cb_tui"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vf_filter_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="退款"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            app:layout_flexBasisPercent="26%"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cb_chong"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vf_filter_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="充值"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            app:layout_flexBasisPercent="26%"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cb_ti"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vf_filter_item_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="提现"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            app:layout_flexBasisPercent="26%"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_flexBasisPercent="26%"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/line_base" />
+
+    <TextView
+        android:id="@+id/pd_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="18sp" />
+</LinearLayout>

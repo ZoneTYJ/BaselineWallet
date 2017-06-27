@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/vf_sdk_activity_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"     
+        android:layout_marginTop="20dp"      
+        android:background="@color/vf_sdk_white" 
+        android:id="@+id/layout_amount">
+        <View
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/vf_sdk_line_color" />
+        <TextView
+            android:id="@+id/tv_amount_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="金额(元)"
+            android:textColor="@color/vf_sdk_black"
+            android:textSize="@dimen/vf_sdk_txt_size18" />
+
+        <EditText
+        	android:id="@+id/et_amount"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_toRightOf="@id/tv_amount_lable"
+	        android:layout_marginLeft="10dip"  
+	        android:layout_marginRight="10dip" 
+	        android:layout_centerVertical="true"
+	        android:textColorHint="@color/vf_sdk_text_hint_color"
+	        android:textColor="@color/vf_sdk_black"
+	        android:hint="请填写收款金额"
+	        android:background="@null" 
+	        android:maxLength="50"
+	        android:inputType="numberDecimal"
+	        android:textSize="@dimen/vf_sdk_txt_size18" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/vf_sdk_line_color" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"          
+        android:background="@color/vf_sdk_white" 
+        android:id="@+id/layout_reason">
+        <TextView
+            android:id="@+id/tv_reason_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="理由"
+            android:textColor="@color/vf_sdk_black"
+            android:textSize="@dimen/vf_sdk_txt_size18" />
+
+        <EditText
+        	android:id="@+id/et_reason"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_toRightOf="@id/tv_reason_lable"
+	        android:layout_marginLeft="10dip"  
+	        android:layout_marginRight="10dip" 
+	        android:layout_centerVertical="true"
+	        android:textColorHint="@color/vf_sdk_text_hint_color"
+	        android:textColor="@color/vf_sdk_black"
+	        android:hint="收款理由,备注不超过20位"
+	        android:background="@null" 
+	        android:maxLength="20"
+	        android:singleLine="true"
+	        android:inputType="text"
+	        android:textSize="@dimen/vf_sdk_txt_size18" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/vf_sdk_line_color" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tv_set_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:text="添加收款理由"
+        android:textColor="@color/vf_sdk_text_blue_light_color"
+        android:textSize="@dimen/vf_sdk_txt_size18" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/vf_sdk_margin_dp50"
+        android:layout_marginTop="@dimen/vf_sdk_margin_dp20"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/vf_btn_normal_bg_selector"
+        android:enabled="false" 
+        android:text="确定"
+        android:id="@+id/btn_confirm" 
+        android:textColor="@color/vf_sdk_set_payment_pwd_text_color"
+        android:textSize="@dimen/vf_sdk_txt_size20" />
+</LinearLayout>

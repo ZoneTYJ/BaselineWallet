@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="rectangle">    
+    <corners android:radius="5dip"/>
+    <solid android:color="@color/pay_pwd_bg"/>    
+    <!-- 边框线 -->
+    <stroke android:color="@color/pay_pwd_border" android:width="0.8dp" />
+    
+</shape>

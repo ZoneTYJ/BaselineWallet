@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="vertical" 
+	    android:background="@color/color_white">
+	    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/vf_btn_back_pressed" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="10dip"
+                android:textColor="@color/text_normal_color"
+                android:text="选择付款方式"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/ly_zhifubao"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/vf_list_item_selector" >
+            <View
+	           	android:layout_width="fill_parent"
+	           	android:layout_height="0.5dp"
+	           	android:background="@color/line_color" />
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dip"
+			    android:paddingTop="10dip"
+			    android:paddingBottom="10dip"
+			    android:textColor="@color/text_normal_color"
+			    android:text="支付宝"
+			    android:textSize="18sp"/>
+			<ImageView android:id="@+id/iv_select_zhifubao"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="10dip"
+			    android:layout_centerVertical="true"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/vf_select" />
+		</RelativeLayout>
+		
+        <RelativeLayout
+            android:id="@+id/ly_weixin"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/vf_list_item_selector" >
+            <View
+	           	android:layout_width="fill_parent"
+	           	android:layout_height="0.5dp"
+	           	android:background="@color/line_color" />
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dip"
+			    android:paddingTop="10dip"
+			    android:paddingBottom="10dip"
+			    android:textColor="@color/text_normal_color"
+			    android:text="微信"
+			    android:textSize="18sp"/>
+			<ImageView android:id="@+id/iv_select_weixin"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="10dip"
+			    android:layout_centerVertical="true"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/vf_select" />
+		</RelativeLayout>
+		
+        <RelativeLayout
+            android:id="@+id/ly_yinlian"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/vf_list_item_selector" >
+            <View
+	           	android:layout_width="fill_parent"
+	           	android:layout_height="0.5dp"
+	           	android:background="@color/line_color" />
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dip"
+			    android:paddingTop="10dip"
+			    android:paddingBottom="10dip"
+			    android:textColor="@color/text_normal_color"
+			    android:text="银联"
+			    android:textSize="18sp"/>
+			<ImageView android:id="@+id/iv_select_yinlian"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="10dip"
+			    android:layout_centerVertical="true"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/vf_select" />
+		</RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_overage"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/vf_list_item_selector" >
+            <View
+	           	android:layout_width="fill_parent"
+	           	android:layout_height="0.5dp"
+	           	android:background="@color/line_color" />
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dip"
+			    android:paddingTop="10dip"
+			    android:paddingBottom="10dip"
+			    android:textColor="@color/text_normal_color"
+			    android:text="余额支付"
+			    android:textSize="18sp"/>
+			<ImageView android:id="@+id/iv_select_overage"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="10dip"
+			    android:layout_centerVertical="true"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/vf_select" />
+		</RelativeLayout>
+
+		<RelativeLayout
+            android:id="@+id/ly_qpay_card"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:visibility="gone"
+		    android:background="@drawable/vf_list_item_selector" >
+            <View
+	           	android:layout_width="fill_parent"
+	           	android:layout_height="0.5dp"
+	           	android:background="@color/line_color" />
+			<TextView 
+			    android:id="@+id/tv_qpay_bank"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dip"
+			    android:paddingTop="10dip"
+			    android:textColor="@color/text_normal_color"
+			    android:text="招商银行"
+			    android:textSize="18sp"/>
+			<TextView 
+			    android:id="@+id/tv_qpay_number"
+			    android:layout_below="@id/tv_qpay_bank"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dip"
+			    android:paddingBottom="10dip"
+			    android:textColor="@color/text_normal_color"
+			    android:text="3303289939393939"
+			    android:textSize="18sp"/>
+			<ImageView android:id="@+id/iv_select_qpay_bank"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="10dip"
+			    android:layout_centerVertical="true"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/vf_select" />
+		</RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ly_qpay_new_card"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/vf_list_item_selector" >
+            <View
+	           	android:layout_width="fill_parent"
+	           	android:layout_height="0.5dp"
+	           	android:background="@color/line_color" />
+			<TextView 
+			    android:id="@+id/tv_qpay_new_card"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dip"
+			    android:paddingBottom="10dip"
+			    android:paddingTop="10dip"
+			    android:textColor="@color/text_normal_color"
+			    android:text="使用其它卡支付"
+			    android:textSize="18sp"/>
+			<ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="10dip"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/vf_right_arrow" />
+		</RelativeLayout>
+        <RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/vf_list_item_selector" >
+            <View
+	           	android:layout_width="fill_parent"
+	           	android:layout_height="0.5dp"
+	           	android:background="@color/line_color" />
+			<View  
+			    android:layout_width="wrap_content"
+			    android:layout_height="80dip"/>
+		</RelativeLayout>
+       
+    </LinearLayout>
+</RelativeLayout>

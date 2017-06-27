@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/iv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vf_icon_warn"/>
+        <TextView
+            android:id="@+id/tv_autonym_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您尚未完成实名认证，请上传身份证"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ea8010"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_base"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@android:color/white"
+        android:paddingLeft="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="真实姓名"
+            android:textColor="@color/text_3"
+            android:textSize="16dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_autonym_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_9"
+            android:textSize="16dp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@android:color/white"
+        android:paddingLeft="18dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginRight="18dp"
+            android:background="@color/line_base"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="身份证"
+            android:textColor="@color/text_3"
+            android:textSize="16dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_autonym_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_9"
+            android:textSize="16dp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_base"/>
+
+    <Button
+        android:id="@+id/tv_authenticate"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vf_btn_normal_bg_selector"
+        android:text="上 传 照 片"
+        android:textColor="@drawable/vf_btn_normal_text_selector"
+        android:textSize="18dp" />
+
+</LinearLayout>

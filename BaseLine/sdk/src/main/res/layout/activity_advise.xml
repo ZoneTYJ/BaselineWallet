@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg">
+    <EditText
+        android:id="@+id/et_advise"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="18dp"
+        android:gravity="left|top"
+        android:textColor="@color/text_3"
+        android:background="@android:color/white"
+        android:maxLength="300"
+        android:textSize="18dp"/>
+</LinearLayout>

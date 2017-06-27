@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/vf_sdk_activity_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/vf_sdk_margin_dp50"
+        android:background="@color/vf_sdk_title_bg_color" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/vf_btn_normal_bg_selector"
+            android:onClick="ActionBack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/vf_sdk_margin_dp10"
+            android:text="@string/payment_qrcode_title"
+            android:textColor="@color/vf_sdk_white"
+            android:textSize="@dimen/vf_sdk_txt_size20" />
+    </RelativeLayout>
+    
+	<LinearLayout
+	    android:id="@+id/layout_qrcode"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/vf_sdk_white"
+	    android:orientation="vertical" >
+		<TextView 
+		    android:id="@+id/tv_result"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20dip"
+		    android:layout_gravity="center_horizontal"
+		    android:singleLine="true"
+		    android:text="处理中"
+		    android:textColor="@color/vf_sdk_text_blue_light_color"
+		    android:textSize="@dimen/vf_sdk_txt_size18"/>	
+		 <TextView 
+		    android:id="@+id/tv_pay_money"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="10dip"
+		    android:text=""
+		    android:textColor="@color/vf_sdk_black"
+		    android:textSize="@dimen/vf_sdk_txt_size18"/>
+	</LinearLayout>
+</LinearLayout>

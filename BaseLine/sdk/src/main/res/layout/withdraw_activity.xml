@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/activity_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_select_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vf_rectangle_selector"
+        android:clickable="true">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"/>
+
+        <FrameLayout
+            android:id="@+id/fly_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/ly_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/iv_bank_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/iv_bank_icon"
+                    android:id="@+id/bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="招商银行"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/iv_bank_icon"
+                    android:layout_below="@+id/bank_name"
+                    android:id="@+id/bank_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="6006 5555 ***** 112"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="14dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_no_select_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="15dip"
+                    android:text="请选择提现银行"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/vf_right_arrow"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/fly_bank"
+            android:background="@color/line_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_payment_date"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/vf_rectangle_selector"
+        android:clickable="true">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:text="到账时间"
+            android:textColor="@color/text_normal_color"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/vf_right_arrow"/>
+
+        <TextView
+            android:layout_toLeftOf="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:text="两小时到账"
+            android:textColor="@color/text_color_black"
+            android:textSize="14dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_available_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="可转出余额：0.00元"
+        android:textColor="@color/text_normal_color"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/vf_row_bg"
+        android:orientation="horizontal">"
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="金额"
+            android:textColor="@color/text_normal_color"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:background="@null"
+            android:hint="转出金额"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_normal_color"
+            android:textColorHint="@color/text_hint_color"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_amount_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="每笔限额50000.00元，本日还可转出3次。"
+        android:textColor="@color/text_normal_color"
+        android:textSize="12dp"/>
+
+    <Button
+        android:id="@+id/btn_withdraw"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vf_btn_normal_bg_selector"
+        android:enabled="false"
+        android:text="提现"
+        android:textColor="@drawable/vf_btn_normal_text_selector"
+        android:textSize="18dp"/>
+
+</LinearLayout>

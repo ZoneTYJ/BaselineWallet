@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/activity_bg"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="10dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_name_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vf_rectangle_title_white_bg">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="12dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="12dip"
+                    android:enabled="false"
+                    android:text="持卡人"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/tv_name"
+                    android:background="@null"
+                    android:hint="收款人姓名"
+                    android:inputType="text"
+                    android:textColor="@color/text_normal_color"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+
+            <com.vfinworks.vfsdk.view.AddnewBankCardView
+                android:id="@+id/layout_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/vf_row_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:text="金额"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:id="@+id/et_money"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="免服务费"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/text_normal_color"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/tv_btn_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="限额说明"
+                    android:textColor="@color/btn_normal_default"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vf_row_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="16dp"
+                    android:text="备注" />
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dip"
+                    android:maxLength="20"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textColor="@color/text_normal_color"
+                    android:hint="20个字以内"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:enabled="false"
+                android:id="@+id/btn_done"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/vf_btn_normal_bg_selector"
+                android:text="下一步"
+                android:textColor="@drawable/vf_btn_normal_text_selector"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

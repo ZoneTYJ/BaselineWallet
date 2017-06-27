@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/activity_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_cp_label"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:text="请输入需要绑定的新手机号"
+        android:textSize="14dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:textColor="@color/text_9"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_base"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:paddingLeft="18dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="新手机号"
+            android:textColor="@color/text_3"
+            android:textSize="16dp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/et_cp_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入手机号"
+            android:lines="1"
+            android:text=""
+            android:textColor="@color/text_normal_color"
+            android:textColorHint="#cccccc"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_base"/>
+
+    <Button
+        android:id="@+id/tv_next"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vf_btn_normal_bg_selector"
+        android:text="下一步"
+        android:textColor="@drawable/vf_btn_normal_text_selector"
+        android:textSize="18dp" />
+
+</LinearLayout>

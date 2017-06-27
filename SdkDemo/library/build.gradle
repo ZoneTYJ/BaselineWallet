@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'cn.qqtheme.framework:WheelPicker:1.4.6'
+    compile 'pub.devrel:easypermissions:0.2.1'
+    compile "de.halfbit:pinned-section-listview:1.0.0"
+    compile 'com.google.android:flexbox:0.2.5'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.6@aar'
+}
+
+//都是因为如果程序内出现不同的，support或者其他外部引用库的多个版本，Gradle在进行合并的时候会使用本地持有的，最高版本的来进行编译，
+// 所以25的support就有可能引用26的东西，就会出现 属性 merge 错误 ，或者Class丢失，解决方法就是强制使用相同版本的库：
+//configurations.all {
+//
+//    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+//        def requested = details.requested
+//        if (requested.group == 'com.android.support') {
+////            if (!requested.name.startsWith("multidex")) {
+//            details.useVersion '25.3.1'
+////            }
+//        }
+//    }
+//}
+

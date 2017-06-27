@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layout_parent"
+   	android:background="@color/activity_bg"
+    android:orientation="vertical" > 
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:layout_alignParentTop="true"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	
+	        <TextView
+				android:id="@+id/tv_hint_label"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="20dp"
+	            android:gravity="center"
+	            android:text="请设置6位数字支付密码"
+	            android:textSize="18sp" />
+	
+	        <com.vfinworks.vfsdk.view.paypwd.VFPasswordView
+                android:id="@+id/pay_password_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:background="@android:color/white"
+	            android:layout_marginTop="20dip" />
+	
+	        <Button
+	            android:id="@+id/button_next"
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dip"
+	            android:layout_marginTop="20dip"
+	            android:background="@drawable/vf_btn_normal_bg_selector"
+	            android:textSize="18sp" 
+	            android:enabled="false"
+	            android:text="下一步"
+	            android:textColor="@drawable/vf_btn_normal_text_selector" />
+	    </LinearLayout>
+        <com.vfinworks.vfsdk.view.paypwd.VFKeyBoardView
+	        android:id="@+id/keyboard_view"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+			android:background="@android:color/white"
+	        android:layout_alignParentBottom="true" />
+    </RelativeLayout> 
+    
+</LinearLayout>

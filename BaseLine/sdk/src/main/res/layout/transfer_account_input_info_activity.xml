@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg" >
+    <ImageView
+        android:layout_marginTop="45dp"
+        android:background="@drawable/vf_header02"
+        android:layout_gravity="center"
+        android:layout_width="94dp"
+        android:layout_height="94dp"/>
+    <TextView
+        android:id="@+id/tv_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_normal_color" 
+        android:textSize="17dp"
+        android:text="这是一个比较长的用户名(真实姓名也不短啊)" />
+    <TextView
+        android:id="@+id/tv_account_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_gray_color" 
+        android:textSize="12dp"
+        android:text="13800013800" />
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="43dp"
+	    android:background="@drawable/vf_row_bg"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_gravity="center_vertical"
+	        android:textColor="@color/text_normal_color" 
+	        android:textSize="16dp"
+	        android:text="金额" />
+	    <EditText
+            android:id="@+id/et_money"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"  
+            android:textColorHint="@color/text_hint_color"
+            android:textColor="@color/text_normal_color"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:textSize="14dp"/>
+    </LinearLayout>
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/vf_row_bg"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_gravity="center_vertical"
+	        android:textColor="@color/text_normal_color" 
+	        android:textSize="16dp"
+	        android:text="备注" />
+	    <EditText
+            android:id="@+id/et_remark"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"  
+            android:maxLength="20"
+            android:textColorHint="@color/text_hint_color"
+            android:textColor="@color/text_normal_color"
+            android:hint="20个字以内"
+            android:background="@null" 
+            android:inputType="text"
+            android:textSize="14dp" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_comfirm" 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/vf_btn_normal_bg_selector"
+        android:enabled="false" 
+        android:text="确认转账"
+        android:textColor="@drawable/vf_btn_normal_text_selector"
+        android:textSize="18sp" />
+    
+</LinearLayout>

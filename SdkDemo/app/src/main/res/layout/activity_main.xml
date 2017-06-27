@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.vfinance.demo.MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_init"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="初始化" />
+    <TextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="充值" />
+    <TextView
+        android:id="@+id/tv_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="提现" />
+    
+    <TextView
+        android:id="@+id/tv_my_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="我的银行卡" />
+    
+    <TextView
+        android:id="@+id/tv_add_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="添加银行卡" />
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="支付" />
+    <TextView
+        android:id="@+id/tv_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="下订单" />
+    <TextView
+        android:id="@+id/tv_order_and_pay"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="下订单并支付" />
+    <TextView
+        android:id="@+id/tv_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="转账" />
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="登录" />
+    <TextView
+        android:id="@+id/tv_forget_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="忘记支付密码" />
+    <TextView
+        android:id="@+id/tv_add_channel"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="添加新渠道" />
+
+</LinearLayout>

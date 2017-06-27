@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.vfinance.demo.MainActivity" >
+
+    <TextView
+        android:id="@+id/text_test"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="#ffff0000"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="test" />
+    <TextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="#ffff0000"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="充值" />
+    <TextView
+        android:id="@+id/tv_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="#ffff7d00"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="提现" />
+    
+    <TextView
+        android:id="@+id/tv_my_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="#ffffff00"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="我的银行卡" />
+    
+    <TextView
+        android:id="@+id/tv_add_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="#ff00ff00"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="添加银行卡" />
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="#ff0000ff"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="支付" />
+    <TextView
+        android:id="@+id/tv_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="#ff00ffff"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="下订单" />
+    <TextView
+        android:id="@+id/tv_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="#ffff00ff"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="转账" />
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="#ff11ffff"
+        android:textSize="16sp"
+        android:paddingLeft="10dip"
+        android:text="登录" />
+
+</LinearLayout>

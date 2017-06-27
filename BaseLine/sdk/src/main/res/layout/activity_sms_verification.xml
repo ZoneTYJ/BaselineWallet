@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv_phone_lable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="10dip" 
+        android:singleLine="true"
+        android:text="请输入手机收到的短信验证码"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="45dip"
+            android:layout_marginRight="10dip"
+            android:paddingLeft="8dip"
+            android:layout_weight="0.6"
+            android:hint="短信验证码"
+            android:maxLength="6"
+            android:inputType="number"
+            android:textColorHint="@color/text_hint_color"
+            android:textColor="@color/text_normal_color"
+            android:background="@drawable/vf_editview_white_default_shape"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_get_code"
+            android:layout_width="0dp"
+            android:layout_height="45dip" 
+            android:layout_weight="0.4"   
+            android:textSize="18sp"
+            android:enabled="false"
+            android:textColor="@drawable/vf_btn_normal_text_selector"
+            android:background="@drawable/vf_btn_normal_bg_selector" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip" 
+        android:text="确定"
+        android:textSize="20sp"
+        android:background="@drawable/vf_btn_normal_bg_selector"
+        android:enabled="false"
+        android:textColor="@drawable/vf_btn_normal_text_selector" />
+
+</LinearLayout>

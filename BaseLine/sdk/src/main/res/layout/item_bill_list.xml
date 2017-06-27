@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_label"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="#F6F7FB">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_state"
+            android:background="@color/line_base" />
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="label"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_state"
+            android:background="@color/line_base" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周日"
+            android:textColor="@color/text_9"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/iv_mark"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/tv_week"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/vf_ico_chong"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_mark"
+            android:layout_alignBaseline="@id/tv_week"
+            android:layout_marginLeft="20dp"
+            android:text="0.01"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/tv_week"
+            android:layout_marginRight="18dp"
+            android:text="交易结束"
+            android:textColor="#ff822f"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_mark"
+            android:layout_alignBaseline="@id/tv_date"
+            android:layout_marginLeft="20dp"
+            android:text="   "
+            android:textColor="#909090"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_base" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01-07"
+            android:textColor="#909090"
+            android:textSize="16dp"
+            android:layout_alignBottom="@+id/iv_mark"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

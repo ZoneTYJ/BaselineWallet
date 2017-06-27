@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:id="@+id/layout_mode"
+    android:background="@drawable/vf_list_item_selector"
+    android:descendantFocusability="blocksDescendants" >
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_centerVertical="true">
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dip"
+	        android:text="中国工商银行"
+	        android:id="@+id/tv_bank_name"
+	        android:textColor="@color/text_normal_color"
+	        android:textSize="16sp"/>
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dip"
+	        android:text="2233 2222 2222"
+	        android:id="@+id/tv_account"
+	        android:textSize="16sp"
+	        android:textColor="@color/text_normal_color"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vf_ture"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btn_select"  
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

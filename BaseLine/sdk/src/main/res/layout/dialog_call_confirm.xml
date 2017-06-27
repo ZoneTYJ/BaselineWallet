@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp" android:layout_height="168dp"
+    >
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:gravity="center"
+        android:text="400-688-8692"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="18dp"
+        android:textColor="@color/text_3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_ccd_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/vf_dialog_btn_left_default_shape"
+            android:textColor="@color/text_3"
+            android:text="取 消"/>
+        <TextView
+            android:id="@+id/tv_ccd_call"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/vf_dialog_sure_shape2"
+            android:textColor="@android:color/white"
+            android:text="拨 号"/>
+    </LinearLayout>
+</RelativeLayout>

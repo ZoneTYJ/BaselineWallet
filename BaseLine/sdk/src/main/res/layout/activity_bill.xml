@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include android:id="@+id/title_bar"
+        layout="@layout/view_titlebar"
+        />
+    <TextView
+        android:id="@+id/tv_none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="没有数据"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.halfbit.pinnedsection.PinnedSectionListView
+            android:id="@+id/lv_bill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:background="@android:color/white"
+            ></de.halfbit.pinnedsection.PinnedSectionListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
